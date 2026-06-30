@@ -1,12 +1,9 @@
 numpy
 pandas
 scipy
-matplotlib
+matplotlib==3.7.0
 streamlit
-pandas-profiling
+ydata-profiling
 streamlit-pandas-profiling
 openpyxl
 xlrd
-pydantic-settings
-numba-cuda
-fg-data-profiling
