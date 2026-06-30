@@ -4,6 +4,7 @@ scipy
 matplotlib
 streamlit
 htmlmin2
+ydata-profiling
 pandas-profiling
 streamlit-pandas-profiling
 openpyxl 
