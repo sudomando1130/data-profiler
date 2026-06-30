@@ -10,3 +10,4 @@ streamlit-pandas-profiling
 openpyxl 
 xlrd
 legacy-cgi
+setuptools<82 
