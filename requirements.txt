@@ -3,6 +3,7 @@ pandas
 scipy
 matplotlib
 streamlit
+htmlmin2
 pandas-profiling
 streamlit-pandas-profiling
 openpyxl 
