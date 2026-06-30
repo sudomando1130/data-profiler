@@ -1,12 +1,9 @@
 import streamlit as st 
 import pandas as pd 
-#from ydata_profiling import ProfileReport
-import data_profiling
+from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 import sys
 import os
-from pydantic_settings import BaseSettings
-
 st.set_page_config(page_title='Data Profiler',layout='wide')
 
 
@@ -26,7 +23,7 @@ def validate_file(file):
 
 # sidebar
 with st.sidebar:
-    uploaded_file = st.file_uploader("Upload .csv OR .xlsx files not exceeding 10 MB")
+    uploaded_file = st.file_uploader("Upload .csv, .xlsx files not exceeding 10 MB")
     if uploaded_file is not None:
         st.write('Modes of Operation')
         minimal = st.checkbox('Do you want minimal report ?')
@@ -62,8 +59,8 @@ if uploaded_file is not None:
             with st.spinner('Generating Report'):
                 pr = ProfileReport(df,
                                 minimal=minimal,
-                                #dark_mode=dark_mode
-                                #orange_mode=orange_mode
+                                dark_mode=dark_mode,
+                                orange_mode=orange_mode
                                 )
                 
             st_profile_report(pr)
