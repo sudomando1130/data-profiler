@@ -3,7 +3,6 @@ import pandas as pd
 from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 #import data_profiling
-from data_profiling import ProfileReport
 import sys
 import os
 st.set_page_config(page_title='Data Profiler',layout='wide')
